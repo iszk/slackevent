@@ -18,7 +18,7 @@ def hoge():
     data = app.current_request.json_body
     if (data['type'] == 'url_verification'):
         return url_verification(data)
-    if (data['type'] == 'event_callback'):
+    elif (data['type'] == 'event_callback'):
         if (data['event']['type'] == 'emoji_changed'):
             return emoji_changed(data['event'])
     log.warn("unsupported data %s" % data)
