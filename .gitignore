@@ -106,3 +106,4 @@ venv.bak/
 # chalice
 .chalice/deployments/
 .chalice/venv/
+.chalice/config.json
